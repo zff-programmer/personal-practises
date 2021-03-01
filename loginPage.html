@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>登录页面</title>
-  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1186631_e4bwfsrgbr5.css">
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"">
+  <link rel="stylesheet" href="./icon.css">
   <style>
     * {
       margin: 0;
@@ -22,7 +21,8 @@
       text-decoration: none;
       color: #666;
     }
-    a:hover{
+
+    a:hover {
       color: #e13d3a;
     }
 
@@ -80,24 +80,29 @@
       background-color: yellowgreen;
     }
 
+    .lgoin-btn:hover {
+      background-color: #53d9b7;
+    }
+
     .footer {
-      position: absolute;
-      left: 0;
-      bottom: 0;
       height: 200px;
       width: 80%;
-      margin: 0 30px;
+      margin: 40px auto 0;
       text-align: center;
       font-size: 12px;
     }
-    .login-icon{
+
+    .login-icon {
       display: inline-block;
       width: 40px;
       height: 40px;
       line-height: 40px;
       border-radius: 50%;
-      background-color: #459ff1;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px #53d9b7;
+      margin-right: 5px;
     }
+
     .qs-icon {
       font-size: 20px;
     }
@@ -105,53 +110,52 @@
     .footer li {
       margin-bottom: 20px;
     }
-    .footer li:hover{
-      background-color: #fff;
+
+    .footer .login-icon:hover {
+      box-shadow: 0 0 15px #49b3fd;
     }
-    
-    
   </style>
 </head>
 
 <body>
   <div id=" container">
-  <!-- 头部开始 -->
-  <header class="header">登录</header>
-  <!-- 头部结束 -->
-  <!-- 主体部分开始 -->
-  <div class="main">
-    <div class="login">
-      <div>用户名</div>
-      <div class="user-info">
-        <i class="qs-icon i-user"></i><input type="text" placeholder="请输入用户名" id="username">
+    <!-- 头部开始 -->
+    <header class="header">登录</header>
+    <!-- 头部结束 -->
+    <!-- 主体部分开始 -->
+    <div class="main">
+      <div class="login">
+        <div>用户名</div>
+        <div class="user-info">
+          <i class="qs-icon i-user"></i><input type="text" placeholder="请输入用户名" id="username">
+        </div>
+        <div>密码</div>
+        <div class="user-info">
+          <i class="qs-icon i-mima"></i><input type="text" placeholder="请输入密码" id="password">
+        </div>
+        <div class="password-forget"><a href="#">忘记密码?</a></div>
+        <button class="lgoin-btn">登录</button>
       </div>
-      <div>密码</div>
-      <div class="user-info">
-        <i class="qs-icon i-mima"></i><input type="text" placeholder="请输入密码" id="password">
-      </div>
-      <div class="password-forget"><a href="#">忘记密码?</a></div>
-      <button class="lgoin-btn">登录</button>
     </div>
+    <!-- 主体部分结束 -->
+    <!-- 尾部开始 -->
+    <footer class="footer">
+      <ul>
+        <li><a href="#">第三方登录</a></li>
+        <li class="login-icon">
+          <i class="qs-icon i-github"></i>
+        </li>
+        <li class="login-icon">
+          <i class="qs-icon i-mail"></i>
+        </li>
+        <li class="login-icon">
+          <i class="qs-icon i-phone"></i>
+        </li>
+        <li><a href="#">立即注册</a></li>
+      </ul>
+    </footer>
+    <!-- 尾部结束 -->
   </div>
-  <!-- 主体部分结束 -->
-  <!-- 尾部开始 -->
-  <footer class="footer">
-    <ul>
-      <li><a href="#">第三方登录</a></li>
-      <li class="login-icon">
-        <i class="qs-icon i-github"></i>
-      </li>
-      <li class="login-icon">
-        <i class="qs-icon i-mail"></i>
-      </li>
-      <li class="login-icon">
-        <i class="qs-icon i-phone"></i>
-      </li>
-      <li><a href="#">立即注册</a></li>
-    </ul>
-  </footer>
-  <!-- 尾部结束 -->
-  </div>
-  </body>
+</body>
 
 </html>
